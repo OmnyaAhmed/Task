@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.AddUserTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="ViewDataSuccessfully" invocation-numbers="0"/>
+          <include name="screenshotOnFailure"/>
+          <include name="SearchByUserNameSuccessfully" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.AddUserTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
